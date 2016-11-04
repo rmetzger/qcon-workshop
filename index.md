@@ -1,5 +1,5 @@
 ---
-title: Apache Flink&reg; Training
+title: Apache Flink&reg; QCon Workshop
 layout: page
 ---
 
@@ -8,7 +8,7 @@ layout: page
 
 ### Goals and scope of this training
 
-This training teaches how to implement scalable data analysis programs with Apache Flink 1.1.2. 
+This training teaches how to implement scalable data analysis programs with Apache Flink 1.1.3. 
 
 Specifically, this training teaches:
 
@@ -19,6 +19,8 @@ Specifically, this training teaches:
 
 - How to implement Flink programs using its APIs
 	- Solve exercises for stream programs using the DataStream API
-	- Solve exercises for batch programs using the DataSet API
   
 - How to package, execute, and monitor Flink programs on running Flink systems
+
+
+This page is a fork of [Apache Flink&reg; Training website](http://dataartisans.github.io/flink-training/).

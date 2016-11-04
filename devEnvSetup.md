@@ -34,9 +34,9 @@ Run one of following commands to generated a Flink Java or Scala project.
 mvn archetype:generate                             \
     -DarchetypeGroupId=org.apache.flink            \
     -DarchetypeArtifactId=flink-quickstart-java    \
-    -DarchetypeVersion=1.1.2                       \
+    -DarchetypeVersion=1.1.3                       \
     -DgroupId=org.apache.flink.quickstart          \
-    -DartifactId=flink-java-project                \
+    -DartifactId=flink-workshop                    \
     -Dversion=0.1                                  \
     -Dpackage=org.apache.flink.quickstart          \
     -DinteractiveMode=false
@@ -50,7 +50,7 @@ mvn archetype:generate                             \
     -DarchetypeArtifactId=flink-quickstart-scala   \
     -DarchetypeVersion=1.1.2                       \
     -DgroupId=org.apache.flink.quickstart          \
-    -DartifactId=flink-scala-project               \
+    -DartifactId=flink-workshop                    \
     -Dversion=0.1                                  \
     -Dpackage=org.apache.flink.quickstart          \
     -DinteractiveMode=false
@@ -58,17 +58,8 @@ mvn archetype:generate                             \
 
 **Note**: Windows users need to remove the backslashes from the Maven commands.
 
-The generated Flink quickstart project is located in a folder called `flink-java-project` (`flink-scala-project` for Scala projects).
+The generated Flink quickstart project is located in a folder called flink-workshop. 
 
-#### Clone and build the flink-training-exercises project 
-
-The `flink-training-exercises` project contains utility classes and reference solutions for the programming exercises. Clone the `flink-training-exercises` project from Github and build it.
-
-~~~bash
-git clone https://github.com/dataArtisans/flink-training-exercises.git
-cd flink-training-exercises
-mvn clean install
-~~~
 
 #### Add the flink-training-exercises dependency to your pom.xml
 
@@ -84,7 +75,7 @@ Open the `pom.xml` file in your Maven project (`./flink-java-project/pom.xml` or
 
 #### Build your Flink quickstart project
 
-In order to test the generated project and to download all required dependencies run the following command in the `flink-java-project` (`flink-scala-project` for Scala projects) folder.
+In order to test the generated project and to download all required dependencies run the following command in the `flink-workshop` folder.
 
 ~~~bash
 mvn clean package
@@ -119,7 +110,7 @@ Assuming you have an IDE with a Flink quickstart project imported, you can execu
 
 In order to execute programs on a running Flink instance (rather than from within your IDE) you need to install Flink on your machine. To do so, follow these steps:
 
-- Download the Apache Flink 1.1.2 release from the [download page](http://flink.apache.org/downloads.html). Since we won't use HDFS or YARN, any Hadoop version will work.
+- Download the Apache Flink 1.1.3 release from the [download page](http://flink.apache.org/downloads.html). Since we won't use HDFS or YARN, any Hadoop version will work.
 - Extract the downloaded `.tgz` archive
 - The resulting folder contains a Flink setup that can be locally executed without any further configuration.
 
