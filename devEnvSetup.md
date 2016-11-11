@@ -48,7 +48,7 @@ mvn archetype:generate                             \
 mvn archetype:generate                             \
     -DarchetypeGroupId=org.apache.flink            \
     -DarchetypeArtifactId=flink-quickstart-scala   \
-    -DarchetypeVersion=1.1.2                       \
+    -DarchetypeVersion=1.1.3                       \
     -DgroupId=org.apache.flink.quickstart          \
     -DartifactId=flink-workshop                    \
     -Dversion=0.1                                  \
@@ -63,7 +63,7 @@ The generated Flink quickstart project is located in a folder called flink-works
 
 #### Add the flink-training-exercises dependency to your pom.xml
 
-Open the `pom.xml` file in your Maven project (`./flink-java-project/pom.xml` or `flink-scala-project/pom.xml`) with a text editor and add the following dependency.
+Open the `pom.xml` file in your Maven project (`./flink-workshop/pom.xml`) with a text editor and add the following dependency.
 
 ~~~xml
 <dependency>
